@@ -4,7 +4,7 @@ const port = 3000
 
 const server = http.createServer(function(req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html'})
-    fs.readFile('xedni.html', function(error, data) {
+    fs.readFile('index.html', function(error, data) {
         if (error) {
             res.writeHead(404)
             res.write('Error: File not found or some problems came')
